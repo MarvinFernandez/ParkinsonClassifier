@@ -1,0 +1,8 @@
+                      Results Summary                    
+
+Patient{name=d, surname=d, age=d,
+ tremor_score=nil, posture_score=nil, 
+ daily_activities_score=nil, gait_score=nil, 
+ voice_score=nil, final_score=-1, 
+ stage=1, treatment=Amatadine}
+

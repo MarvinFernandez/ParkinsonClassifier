@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="385.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parkinsonclassifier.FXMLDiagnosisVistaController">
+   <children>
+      <Text layoutX="171.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Results Evaluation" wrappingWidth="258.56689453125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subscores:" wrappingWidth="108.5703125">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="52.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gait score">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="52.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daily Activities score">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="52.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Posture score">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="51.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tremor score">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="51.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voice ability score">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="gs_TF" layoutX="209.0" layoutY="117.0" prefHeight="27.0" prefWidth="57.0" text="0" />
+      <TextField fx:id="das_TF" layoutX="209.0" layoutY="152.0" prefHeight="27.0" prefWidth="57.0" text="0" />
+      <TextField fx:id="ps_TF" layoutX="209.0" layoutY="189.0" prefHeight="27.0" prefWidth="57.0" text="0" />
+      <TextField fx:id="ts_TF" layoutX="209.0" layoutY="225.0" prefHeight="27.0" prefWidth="57.0" text="0" />
+      <TextField fx:id="vas_TF" layoutX="209.0" layoutY="260.0" prefHeight="27.0" prefWidth="57.0" text="0" />
+      <Text layoutX="309.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Final score:" wrappingWidth="108.5703125">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Button fx:id="finalScore_BUT" layoutX="333.0" layoutY="117.0" mnemonicParsing="false" onAction="#checkFinalScore" text="Final score" />
+      <TextField fx:id="finalScore_TF" layoutX="455.0" layoutY="117.0" prefHeight="27.0" prefWidth="92.0" />
+      <Text layoutX="342.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stage ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="309.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diagnosis:" wrappingWidth="108.5703125">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="stage_TF" layoutX="456.0" layoutY="189.0" prefHeight="27.0" prefWidth="92.0" />
+      <Text layoutX="309.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suggested treatment:" wrappingWidth="184.5703125">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Button fx:id="treatment_BUT" layoutX="334.0" layoutY="260.0" mnemonicParsing="false" onAction="#checkTreatment" prefHeight="27.0" prefWidth="85.0" text="Treatment" />
+      <TextField fx:id="treatment_TF" layoutX="456.0" layoutY="260.0" prefHeight="27.0" prefWidth="92.0" />
+      <Button fx:id="newP_BUT" layoutX="178.0" layoutY="336.0" mnemonicParsing="false" onAction="#addNewPatient" text="Add new patient" />
+      <Button fx:id="exit_BUT" layoutX="526.0" layoutY="336.0" mnemonicParsing="false" onAction="#finishQuestionaire" text="Exit" />
+      <Button fx:id="save_BUT" layoutX="319.0" layoutY="336.0" mnemonicParsing="false" onAction="#savePatientsInfo" prefHeight="27.0" prefWidth="61.0" text="Save " />
+      <Text fx:id="message_txt" layoutX="251.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

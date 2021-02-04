@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="385.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parkinsonclassifier.FXMLPostureTremorEvaluationController">
+   <children>
+      <Text layoutX="74.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Posture and Tremor Evaluation" wrappingWidth="452.56689453125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="36.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Questions Posture:" wrappingWidth="196.5703125">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="59.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Does the patient have retropulsion?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="59.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Has the patient failed the pull test?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="59.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Is the patient stooped over?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="36.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Questions Tremor:" wrappingWidth="196.5703125">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="61.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classify the tremor of the patient?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="yes_R" layoutX="348.0" layoutY="124.0" mnemonicParsing="false" onAction="#yesRetropulsion" text="Yes" />
+      <CheckBox fx:id="no_R" layoutX="402.0" layoutY="124.0" mnemonicParsing="false" onAction="#noRetropulsion" text="No" />
+      <CheckBox fx:id="yes_PT" layoutX="348.0" layoutY="170.0" mnemonicParsing="false" onAction="#yesPullTest" text="Yes" />
+      <CheckBox fx:id="yes_SO" layoutX="348.0" layoutY="216.0" mnemonicParsing="false" onAction="#yesStooped" text="Yes" />
+      <CheckBox fx:id="no_PT" layoutX="402.0" layoutY="170.0" mnemonicParsing="false" onAction="#noPullTest" text="No" />
+      <CheckBox fx:id="no_SO" layoutX="402.0" layoutY="215.0" mnemonicParsing="false" onAction="#noStooped" text="No" />
+      <CheckBox fx:id="t_0" layoutX="316.0" layoutY="285.0" mnemonicParsing="false" onAction="#tremor_0" prefHeight="18.0" prefWidth="8.0" text="0" />
+      <CheckBox fx:id="t_1" layoutX="356.0" layoutY="285.0" mnemonicParsing="false" onAction="#tremor_1" text="1" />
+      <CheckBox fx:id="t_2" layoutX="395.0" layoutY="285.0" mnemonicParsing="false" onAction="#tremor_2" text="2" />
+      <CheckBox fx:id="t_3" layoutX="436.0" layoutY="285.0" mnemonicParsing="false" onAction="#tremor_3" text="3" />
+      <Button fx:id="check_SBUT" layoutX="59.0" layoutY="342.0" mnemonicParsing="false" onAction="#checkScore" prefHeight="27.0" prefWidth="111.0" text="Check Scores" />
+      <TextField fx:id="posture_scoreTF" layoutX="179.0" layoutY="342.0" prefHeight="27.0" prefWidth="85.0" text="Posture" />
+      <TextField fx:id="tremor_scoreTF" layoutX="273.0" layoutY="342.0" prefHeight="27.0" prefWidth="85.0" text="Tremor" />
+      <Button fx:id="edit_BUT" layoutX="517.0" layoutY="248.0" mnemonicParsing="false" onAction="#editInfo" text="Edit" />
+      <Button fx:id="check_BUT" layoutX="424.0" layoutY="342.0" mnemonicParsing="false" onAction="#check" text="Check" />
+      <Button fx:id="continue_BUT" layoutX="489.0" layoutY="342.0" mnemonicParsing="false" onAction="#continueQuestionaire" prefHeight="27.0" prefWidth="76.0" text="Continue" />
+      <Text fx:id="message_txt" layoutX="60.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

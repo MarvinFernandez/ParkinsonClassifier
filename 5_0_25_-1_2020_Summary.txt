@@ -1,0 +1,20 @@
+                      Results Summary                    
+
+Patient{name=Alejandro, surname=Lillo, age=23,
+ tremor_score=nil, posture_score=nil, 
+ daily_activities_score=nil, gait_score=nil, 
+ voice_score=nil, final_score=-1, 
+ stage=1, treatment=Amatadine}
+
+Patient{name=Daniel, surname=Marchan, age=22,
+ tremor_score=nil, posture_score=nil, 
+ daily_activities_score=nil, gait_score=nil, 
+ voice_score=nil, final_score=-1, 
+ stage=1, treatment=Amatadine}
+
+Patient{name=Marvin, surname=Fernandez, age=22,
+ tremor_score=2, posture_score=4, 
+ daily_activities_score=3, gait_score=2, 
+ voice_score=2, final_score=13, 
+ stage=5, treatment=Brain_surgery}
+

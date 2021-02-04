@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="385.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parkinsonclassifier.FXMLVoiceEvaluationController">
+   <children>
+      <Text layoutX="128.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vocal Ability Evaluation" wrappingWidth="344.56689453125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="51.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Questions:" wrappingWidth="196.5703125">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="75.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Does the patient have soft voice?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="75.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Does the patient is stuttered?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="75.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Does the patient is fast speaking?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="edit_BUT" layoutX="74.0" layoutY="273.0" mnemonicParsing="false" onAction="#editInfo" text="Edit" />
+      <CheckBox fx:id="yes_SV" layoutX="401.0" layoutY="147.0" mnemonicParsing="false" onAction="#yesSoftVoice" text="Yes" />
+      <CheckBox fx:id="no_SV" layoutX="454.0" layoutY="147.0" mnemonicParsing="false" onAction="#noSoftVoice" text="No" />
+      <CheckBox fx:id="yes_SS" layoutX="401.0" layoutY="190.0" mnemonicParsing="false" onAction="#yesStuttered" text="Yes" />
+      <CheckBox fx:id="no_SS" layoutX="454.0" layoutY="190.0" mnemonicParsing="false" onAction="#noStuttered" text="No" />
+      <CheckBox fx:id="yes_FS" layoutX="401.0" layoutY="231.0" mnemonicParsing="false" onAction="#yesFastSpeaking" text="Yes" />
+      <CheckBox fx:id="no_FS" layoutX="454.0" layoutY="231.0" mnemonicParsing="false" onAction="#noFastSpeaking" text="No" />
+      <Text fx:id="message_txt" layoutX="74.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="check_VABUT" layoutX="72.0" layoutY="334.0" mnemonicParsing="false" onAction="#checkVocalAbilityScore" prefHeight="27.0" prefWidth="178.0" text="Check Vocal Ability Score" />
+      <TextField fx:id="vocalAbility_scoreTF" layoutX="264.0" layoutY="334.0" prefHeight="27.0" prefWidth="96.0" />
+      <Button fx:id="check_BUT" layoutX="409.0" layoutY="334.0" mnemonicParsing="false" onAction="#check" text="Check" />
+      <Button fx:id="continue_BUT" layoutX="476.0" layoutY="334.0" mnemonicParsing="false" onAction="#continueQuestionaire" prefHeight="27.0" prefWidth="76.0" text="Continue" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,8 @@
+                      Results Summary                    
+
+Patient{name=marvin, surname=fernandez, age=22,
+ tremor_score=1, posture_score=4, 
+ daily_activities_score=4, gait_score=1, 
+ voice_score=3, final_score=13, 
+ stage=5, treatment=Brain_surgery}
+
